@@ -1,0 +1,20 @@
+{
+  "name": "widget-vanilla-js",
+  "description": "taboola news assighnemt",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "live-server",
+    "test:unit": "node --experimental-vm-modules node_modules/.bin/jest",
+    "test:windows": "node --inspect ./node_modules/jest-cli/bin/jest.js --env=jsdom --runInBand --watch /src/tests/"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-fetch-mock": "^3.0.3"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
